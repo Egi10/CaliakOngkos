@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Caliak Ongkos</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="kabupaten_kota">Kabupaten/Kota</string>
+    <string name="daerah_asal_pengiriman">Daerah Asal Pengiriman</string>
+    <string name="daerah_tujuan_pengiriman">Daerah Tujuan Pengiriman</string>
+    <string name="caliak_ongkos">Caliak Ongkos</string>
+    <string name="masukan_berat_dan_jasa_pengirim">Masukan Berat dan Jasa Pengirim</string>
+    <string name="berat">Berat</string>
+    <string name="kg">Kg</string>
+    <string name="jasa_pengiriman">Jasa Pengiriman</string>
+    <string name="value">Mambayia Sekitar %1$s Lah</string>
+    <string name="etd">Paliang Sampai %1$s Hari Lah</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

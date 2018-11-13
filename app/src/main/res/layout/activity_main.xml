@@ -1,10 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".ui.main.MainActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="3dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    android:text="@string/daerah_asal_pengiriman"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/provinsi"/>
+
+                    <Spinner
+                            android:id="@+id/spinnerProvinsiAsal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kabupaten_kota"/>
+
+                    <Spinner
+                            android:id="@+id/spinnerKabupatenAsal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@android:color/darker_gray"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/daerah_tujuan_pengiriman"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:baselineAligned="false">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/provinsi"/>
+
+                    <Spinner
+                            android:id="@+id/spinnerProvinsiTujuan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kabupaten_kota"/>
+
+                    <Spinner
+                            android:id="@+id/spinnerKabupatenTujuan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/masukan_berat_dan_jasa_pengirim"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:baselineAligned="false">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/berat"/>
+
+                    <EditText
+                            android:id="@+id/et_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="@string/kg"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/jasa_pengiriman"/>
+
+                    <Spinner
+                            android:id="@+id/spinnerJasaPengirim"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tvCaliakOngkos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/caliak_ongkos"
+                    android:gravity="end"
+                    android:textColor="@android:color/holo_red_dark"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+</LinearLayout>

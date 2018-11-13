@@ -1,14 +1,14 @@
-package id.buaja.egifcb.caliakongkos.network.model.province
+package id.buaja.egifcb.caliakongkos.network.model.city
 
 import com.google.gson.annotations.SerializedName
 
 data class Rajaongkir(
 
 	@field:SerializedName("query")
-	val query: List<Any?>? = null,
+	val query: Query? = null,
 
 	@field:SerializedName("results")
-	val results: ArrayList<ResultsItem>?,
+	val results: ArrayList<ResultsItemCity>? = null,
 
 	@field:SerializedName("status")
 	val status: Status? = null

@@ -2,7 +2,7 @@
 Adalah sebuah aplikasi untuk melihat ongkir pengiriman barang berdasarkan kota/kabupaten.
 
 # Sumber API
-API Aplikasi Caliak Ongkos Ini Bersumber Dari <a href="https://rajaongkir.com/">RasaOngkir</a>
+API Aplikasi Caliak Ongkos Ini Bersumber Dari <a href="https://rajaongkir.com/">RajaOngkir</a>
 
 # Screenshot
 <table><tr>

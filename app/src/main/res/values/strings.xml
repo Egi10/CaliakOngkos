@@ -9,9 +9,7 @@
     <string name="berat">Berat</string>
     <string name="kg">Kg</string>
     <string name="jasa_pengiriman">Jasa Pengiriman</string>
-    <string name="value">Mambayia Sekitar %1$s Lah</string>
-    <string name="etd">Paliang Sampai %1$s Hari Lah</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="value">Biaya Pengiriman Rp. %1$s</string>
+    <string name="etd">Estimasi %1$s Hari</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
